@@ -1,5 +1,4 @@
 import wave
-
 from os import listdir
 from os.path import isfile, join
 import os
@@ -31,5 +30,5 @@ def pcm2wav( pcm_file, wav_file, channels=1, bit_depth=16, sampling_rate=16000 )
 
 
 for i in range(len(files)):
-    print(files[i])
-#pcm2wav( 'KsponSpeech_003003.pcm', 'KsponSpeech_003003.wav', 1, 16, 16000 )
+    new_file_name = files[i].replace('pcm','wav')
+    pcm2wav( files[i], new_file_name, 1, 16, 16000 )
