@@ -50,7 +50,7 @@ for i in range(len(files)):
         else:
             continue
     while True:
-        print('감정상태를 입력하시오  1: 암 생각 없음 2: 행복 3: 슬픔 4: 화남 5: 짜증 6: 놀람 7: 귀찮음 8: 열정적         ::: ', end="")
+        print('감정상태를 입력하시오  1: 암 생각 없음 2: 행복 3: 슬픔 4: 화남 5: 짜증 6: 놀람         ::: ', end="")
         emotion = input()
         if emotion == '1':
             print(" 아무 생각 없음 (일상) ")
@@ -76,14 +76,7 @@ for i in range(len(files)):
             print( "놀람")
             print_emotion = "놀람"
             break
-        elif emotion == '7':
-            print( "귀찮음")
-            print_emotion = "귀찮음"
-            break
-        elif emotion == '8':
-            print( "열정적")
-            print_emotion = "열정적"
-            break
+   
         else:
             continue
     print("성별 : ", print_gender , "나이 : ", print_age, "감정 : ", print_emotion,  end='')
